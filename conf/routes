@@ -1,0 +1,8 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+POST    /register                              controllers.ApplicationController.register
+
+POST    /login/user/:id                        controllers.ApplicationController.login(id: String)
